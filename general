@@ -1,0 +1,15 @@
+Helm packages are called charts.
+
+helm create javawebapp will create this directory
+
+javawebapp/
+├── Chart.yaml. #metadata
+|-- charts  #
+├── templates
+│   ├── deployment.yaml
+│   ├── rbac.yaml
+│   └── service.yaml
+└── values.yaml.  #has variables for template dir #contain the image for container
+
+
+Releases
