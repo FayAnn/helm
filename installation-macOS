@@ -1,0 +1,35 @@
+brew install helm
+
+Common actions for Helm:
+- helm ls:  lists all deployments in cluster
+- helm repo ls:  list repos
+- helm repo rm:  
+- helm search:    search for charts
+- helm pull:      download a chart to your local directory to view
+- helm install:   upload the chart to Kubernetes
+- helm uninstall:
+- helm list:      list releases of charts
+
+ADD new chart 
+
+ helm repo add nginx https://helm.nginx.com/stable
+ helm repo update
+ helm repo ls
+
+search chart for nginx previously installed
+helm search repo nginx
+
+show values file
+helm show values nginx/nginx-ingress
+
+show template
+helm template nginx/nginx-ingress
+
+install nginx
+  helm search repo nginx
+  helm install nginx nginx/nginx-ingress
+
+
+NAMESPACE
+
+helm list --all-namespaces
